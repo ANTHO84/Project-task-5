@@ -105,7 +105,7 @@ bool isHovering = false;
                 child: TextButton(
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.green),
+                        MaterialStateProperty.all<Color>(isHovered ?Colors.blue : Colors.green ),
                   ),
                   child: Text(
                     'Yes',
@@ -134,7 +134,7 @@ bool isHovering = false;
                 child: TextButton(
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.red),
+                        MaterialStateProperty.all<Color>(isHovered ?  Colors.blue : Colors.red ),
                   ),
                   child: Text(
                     'No',
